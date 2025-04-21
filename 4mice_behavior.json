@@ -1,0 +1,55 @@
+{
+  "behaviorTypes": [
+    {
+      "id": 1,
+      "name": "CHASE",
+      "color": "rgba(255, 77, 79, 0.3)",
+      "description": "Chasing behavior",
+      "visible": true
+    },
+    {
+      "id": 2,
+      "name": "FIGHT",
+      "color": "rgba(255, 169, 64, 0.3)",
+      "description": "Fighting behavior",
+      "visible": true
+    },
+    {
+      "id": 3,
+      "name": "EAT",
+      "color": "rgba(82, 196, 26, 0.3)",
+      "description": "Eating behavior",
+      "visible": true
+    }
+  ],
+  "behaviorSequences": [
+    {
+      "id": 1,
+      "behaviorTypeId": 1,
+      "startFrame": 0,
+      "endFrame": 10,
+      "participants": [1]
+    },
+    {
+      "id": 2,
+      "behaviorTypeId": 2,
+      "startFrame": 10,
+      "endFrame": 20,
+      "participants": [1, 2]
+    },
+    {
+      "id": 3,
+      "behaviorTypeId": 3,
+      "startFrame": 20,
+      "endFrame": 30,
+      "participants": [1, 2]
+    },
+    {
+      "id": 4,
+      "behaviorTypeId": 1,
+      "startFrame": 30,
+      "endFrame": 40,
+      "participants": [1, 2, 3]
+    }
+  ]
+}
